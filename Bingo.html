@@ -5,17 +5,17 @@
   <link rel="icon" href="Resources/th-logo.jpg">
   <script type="text/javascript" src="Resources/spacesText.js"></script>
   <script type="text/javascript" src="Resources/Bingo.js"></script>
-
 </head>
+
 <body>
-  <table>
-    <tr>
-      <th colspan = "5">
+    
+  <div class="title content div-container">
         <img class="left-image" src="Resources/th-logo.jpg" alt="Talk Heathen logo" height="45" width="45">
-        Talk Heathen Bingo
+        <p class="heading-TH">Talk Heathen Bingo</p>
         <img class="right-image" src="Resources/th-logo.jpg" alt="Talk Heathen logo" height="45" width="45">
-      </th>
-    </tr>
+</div>
+    
+  <table>
     <tr>
       <td id="space-1" onclick="toggleSelect(this)">space 1</td>
       <td id="space-2" onclick="toggleSelect(this)">space 2</td>
@@ -31,12 +31,12 @@
       <td id="space-10" onclick="toggleSelect(this)">space 10</td>
     </tr>
     <tr>
-      <td id="space-11" onclick="toggleSelect(this)">space 11 with a lot of text instead of a little</td>
+      <td id="space-11" onclick="toggleSelect(this)">space 11</td>
       <td id="space-12" onclick="toggleSelect(this)">space 12</td>
       <td class="free-space">
         <img src="Resources/th-logo.jpg" alt="Talk Heathen logo" height="35" width="35">
         <br>
-        Freethought Library 1507 W Koening LN Austin, TX, 78756
+          <p class="free-address">Freethought <br>Library, <br>1507 W Koening Ln Austin, TX 78756</p>
       </td>
       <td id="space-13" onclick="toggleSelect(this)">space 14</td>
       <td id="space-14" onclick="toggleSelect(this)">space 15</td>
@@ -56,11 +56,19 @@
       <td id="space-24" onclick="toggleSelect(this)">space 25</td>
     </tr>
   </table>
-  <div id="newBoardButton"><button onClick="createNewBoard()">New Card</button></div>
-  <div id="error"></div>
+    
+<div id="newBoardButton"><button onClick="createNewBoard()">New Card</button></div>
+    
+<div id="error"></div>
+    
+<div id="div-footer">
+      <p>RULES COMING SOON!</p>    
+      <p>This is not the official bingo card of Talk Heathen.<br />The game creators are not associated with the ACA nor Talk Heathen.<br />
+         This is purely a fan created game.</p>
+      <p><a href="mailto:mail@talkheathen.com?Subject=Talk%20Heathen%20Bingo" target="_top">Contact the Show</a> | 
+         <a href="mailto:mtlewis25@gmail.com?Subject=Talk%20Heathen%20Bingo" target="_top">Contact the Designer</a> | 
+         <a href="mailto:frenchfrieman2@gmail.com?Subject=Talk%20Heathen%20Bingo" target="_top">Contact the Developer</a></p>
+  </div>
+
 </body>
-<footer>
-    Not the official bingo card of Talk Heathen.  We are not an associate of Talk Heathen.
-    <a href="mailto:frenchfrieman2@gmail.com?Subject=Talk%20Heathen%20Bingo" target="_top">Contact the creator</a>
-</footer>
 </html>
