@@ -1,34 +1,90 @@
+/* Talk Heathen Display Title */
+.div-container {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.heading-TH {
+  font-size: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 48px;
+  color: #4D4F4E;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title.content > img,
+    .title.content > p {
+        display: inline-block;
+    }
+
+.left-image {
+  padding-right: 50px;
+}
+
+.right-image{
+  padding-left: 50px;
+}
+
+/* Bingo Card Table */
 table {
   user-select: none;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
 }
+
 td {
-  background-color: lightGrey;
+  background-color: #D0D0D2;
+  color: #4D4F4E;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;  
   width: 110px;
   height: 130px;
   border-left: 4px solid white;
   border-bottom: 4px solid white;
   padding: 10px;
 }
+
 th {
-  font-size: 32;
+  font-size: 32px;
   border-bottom: 10px solid white;
 }
+
 .free-space {
   background-color: white;
-  font-size: 12;
 }
+
+.free-address {
+  color: #4D4F4E;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;      
+}
+
 .selected {
-  background-color: lightcoral;
+  background-color: #333333;
+  color: #ffffff;
+  }
+
+/* Footer Styling */
+#div-footer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-style: normal; 
+  font-variant: normal; 
+  line-height: 48px;
+  color: #555555;
 }
-.left-image {
-  float: left;
-}
-.right-image{
-  float: right;
-}
+
 footer {
   text-align: center;
   width: 100%;
@@ -36,13 +92,67 @@ footer {
   position: fixed;
   bottom: 10px;
 }
+
 #error{
   text-align: center;
   width: 100%;
-  color: red;
+  color: darkred;
 }
+
 #newBoardButton{
   text-align: center;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 16px 32px;
+    margin: 0;
+    text-decoration: none;
+    background: #4D4F4E;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #CB1D0A;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+a {
+    text-decoration: none;
+    color: #CB1D0A;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #4D4F4E;
+}
+
+a:active {
+    text-decoration: none;
+    color: #4D4F4E;
+    
 }
